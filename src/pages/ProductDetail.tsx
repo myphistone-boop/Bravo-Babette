@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const { id } = useParams();
   const product = PRODUCTS.find(p => p.id === id);
   const [quantity, setQuantity] = React.useState(1);
-  const [ingredientsOpen, setIngredientsOpen] = React.useState(false);
+  const [ingredientsOpen, setIngredientsOpen] = React.useState(true);
 
   if (!product) {
     return (
@@ -64,7 +64,7 @@ const ProductDetail = () => {
               <div className="text-2xl md:text-3xl font-bold text-primary">€{product.price.toFixed(2)}</div>
             </div>
 
-            <p className="text-dark/60 text-sm md:text-lg leading-relaxed mb-4 md:mb-10 font-serif italic">
+            <p className="text-dark text-base md:text-lg leading-relaxed mb-4 md:mb-10 font-serif italic font-semibold">
               {product.description}
             </p>
 
@@ -75,8 +75,8 @@ const ProductDetail = () => {
                   <Clock size={24} className="text-primary hidden md:block" />
                 </div>
                 <div>
-                  <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest opacity-40">Préparation</div>
-                  <div className="font-serif italic text-sm md:text-lg">15-20 min</div>
+                  <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-60">Préparation</div>
+                  <div className="font-serif italic font-semibold text-base md:text-lg">15-20 min</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 md:gap-3 text-dark/70">
@@ -85,8 +85,8 @@ const ProductDetail = () => {
                   <Users size={24} className="text-primary hidden md:block" />
                 </div>
                 <div>
-                  <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest opacity-40">Portion</div>
-                  <div className="font-serif italic text-sm md:text-lg">1 Personne</div>
+                  <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-60">Portion</div>
+                  <div className="font-serif italic font-semibold text-base md:text-lg">1 Personne</div>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ const ProductDetail = () => {
                 onClick={() => setIngredientsOpen(!ingredientsOpen)}
                 className="md:hidden w-full flex items-center justify-between mb-2"
               >
-                <h3 className="font-serif italic text-base text-primary">Ingrédients</h3>
+                <h3 className="font-serif italic text-lg font-semibold text-primary">Ingrédients</h3>
                 <ChevronDown size={16} className={`text-primary transition-transform ${ingredientsOpen ? 'rotate-180' : ''}`} />
               </button>
               {/* Desktop: always visible */}
@@ -107,7 +107,7 @@ const ProductDetail = () => {
               <div className={`${ingredientsOpen ? 'block' : 'hidden'} md:block`}>
                 <div className="flex flex-wrap gap-2 md:gap-3">
                   {product.ingredients.map((ing, i) => (
-                    <div key={i} className="flex items-center gap-1.5 md:gap-2 bg-white px-3 md:px-5 py-1.5 md:py-2.5 rounded-lg md:rounded-xl text-xs md:text-sm font-serif italic border border-black/5 shadow-sm">
+                    <div key={i} className="flex items-center gap-1.5 md:gap-2 bg-white px-3 md:px-5 py-2 md:py-2.5 rounded-lg md:rounded-xl text-sm md:text-base font-serif italic font-medium border border-black/5 shadow-sm">
                       <CheckCircle2 size={14} className="text-primary" />
                       {ing}
                     </div>

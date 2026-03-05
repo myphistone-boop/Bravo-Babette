@@ -62,7 +62,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <span className="text-primary font-bold ml-2">€{product.price.toFixed(2)}</span>
           </div>
 
-          <p className="text-dark/50 text-sm font-serif italic line-clamp-2 mb-6">
+          <p className="text-dark text-sm font-serif italic font-medium line-clamp-2 mb-6">
             {product.description}
           </p>
 
