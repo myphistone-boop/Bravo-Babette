@@ -73,6 +73,12 @@
   [style*="transform"] {
     opacity: 1 !important;
     transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  * {
+    animation-play-state: paused !important;
   }
 
   .hero-gradient {
