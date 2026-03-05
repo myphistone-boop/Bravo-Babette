@@ -76,7 +76,7 @@ const ProductDetail = () => {
                 </div>
                 <div>
                   <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-60">Préparation</div>
-                  <div className="font-serif italic font-semibold text-base md:text-lg">15-20 min</div>
+                  <div className="font-serif italic font-bold text-base md:text-lg">15-20 min</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 md:gap-3 text-dark/70">
@@ -86,7 +86,7 @@ const ProductDetail = () => {
                 </div>
                 <div>
                   <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-60">Portion</div>
-                  <div className="font-serif italic font-semibold text-base md:text-lg">1 Personne</div>
+                  <div className="font-serif italic font-bold text-base md:text-lg">1 Personne</div>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ const ProductDetail = () => {
               <div className={`${ingredientsOpen ? 'block' : 'hidden'} md:block`}>
                 <div className="flex flex-wrap gap-2 md:gap-3">
                   {product.ingredients.map((ing, i) => (
-                    <div key={i} className="flex items-center gap-1.5 md:gap-2 bg-white px-3 md:px-5 py-2 md:py-2.5 rounded-lg md:rounded-xl text-sm md:text-base font-serif italic font-medium border border-black/5 shadow-sm">
+                    <div key={i} className="flex items-center gap-1.5 md:gap-2 bg-white px-3 md:px-5 py-2 md:py-2.5 rounded-lg md:rounded-xl text-sm md:text-base font-serif italic font-bold border border-black/5 shadow-sm">
                       <CheckCircle2 size={14} className="text-primary" />
                       {ing}
                     </div>
