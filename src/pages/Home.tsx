@@ -140,7 +140,7 @@ const Home = () => {
                 <img loading="lazy"
                   src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
                   alt="Bravo Babette restaurant"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-bottom"
                   referrerPolicy="no-referrer"
                 />
               </div>
