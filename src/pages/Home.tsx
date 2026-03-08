@@ -59,7 +59,7 @@ const Home = () => {
           {/* Bento Grid - single image on mobile, full grid on desktop */}
           <div className="md:hidden rounded-2xl overflow-hidden shadow-xl h-48">
             <img loading="lazy"
-              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Lieu.webp"
+              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Image%20interieur.webp"
               alt="Bravo Babette"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -73,7 +73,7 @@ const Home = () => {
               className="md:col-span-2 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
-                src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Lieu.webp"
+                src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Image%20interieur.webp"
                 alt="Bravo Babette"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
