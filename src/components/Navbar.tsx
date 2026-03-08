@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Menu as MenuIcon, X } from 'lucide-react';
+import { Menu as MenuIcon, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const Navbar = () => {
@@ -19,11 +19,23 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/20">
-              B
+          <Link to="/" className="flex items-center relative">
+            <div className="relative">
+              {/* Top decorative line - desktop only */}
+              <div className="hidden md:block absolute -top-1 left-2 right-2 h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+              {/* Main text */}
+              <span className="text-[26px] md:text-[32px] font-serif italic font-bold tracking-tight leading-none">
+                Brunch<span className="text-primary">&</span>Co
+              </span>
+              {/* Bottom decorative swirl */}
+              <svg className="absolute -bottom-1.5 left-0 w-full h-2" viewBox="0 0 200 10" preserveAspectRatio="none">
+                <path d="M0 5 Q50 10 100 5 Q150 0 200 5" stroke="#141414" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+              </svg>
+              {/* Second thinner swirl */}
+              <svg className="hidden md:block absolute -bottom-3 left-1 right-1 h-1.5" viewBox="0 0 200 8" preserveAspectRatio="none">
+                <path d="M0 4 Q50 8 100 4 Q150 0 200 4" stroke="#141414" strokeWidth="0.8" fill="none" strokeLinecap="round" opacity="0.3"/>
+              </svg>
             </div>
-            <span className="text-2xl font-serif italic font-bold tracking-tight">Brunch&Co</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -43,11 +55,8 @@ const Navbar = () => {
 
           {/* Actions */}
           <div className="hidden md:flex items-center gap-5">
-            <button className="p-2 hover:bg-black/5 rounded-full transition-colors">
-              <Search size={20} />
-            </button>
             <Link
-              to="/reservation"
+              to="/contact"
               className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
             >
               Réservation
@@ -88,7 +97,7 @@ const Navbar = () => {
               ))}
               <div className="pt-4 flex flex-col gap-3">
                 <Link
-                  to="/reservation"
+                  to="/contact"
                   onClick={() => setIsOpen(false)}
                   className="w-full bg-primary text-white text-center py-3 rounded-lg font-medium shadow-lg shadow-primary/20"
                 >
