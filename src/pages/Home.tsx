@@ -136,11 +136,11 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl">
+              <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-square">
                 <img loading="lazy"
                   src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
                   alt="Bravo Babette restaurant"
-                  className="w-full h-full object-cover object-[center_75%]"
+                  className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
