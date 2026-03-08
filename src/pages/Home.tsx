@@ -138,7 +138,7 @@ const Home = () => {
             >
               <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl">
                 <img loading="lazy"
-                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Image%20interieur.webp"
                   alt="Bravo Babette restaurant"
                   className="w-full h-auto"
                   referrerPolicy="no-referrer"
