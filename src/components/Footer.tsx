@@ -13,10 +13,10 @@ const Footer = () => {
               <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/20">
                 B
               </div>
-              <span className="text-2xl font-serif italic font-bold tracking-tight">Brunch&Co</span>
+              <span className="text-2xl font-serif italic font-bold tracking-tight">Bravo Babette</span>
             </Link>
             <p className="text-white/60 leading-relaxed font-serif italic">
-              "Une expérience culinaire unique, de la ferme à votre assiette. Nous privilégions les produits locaux et de saison."
+              "Des sandwichs créatifs et généreux, préparés avec des produits de qualité au cœur de Montpellier."
             </p>
             <div className="flex gap-4">
               {[Facebook, Instagram, Twitter].map((Icon, i) => (
@@ -47,16 +47,16 @@ const Footer = () => {
             <h4 className="text-lg font-serif italic mb-6 text-primary">Horaires</h4>
             <ul className="space-y-4 text-white/60 font-serif italic">
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Lundi - Vendredi</span>
-                <span className="text-white">09:00 - 22:00</span>
+                <span>Mardi - Samedi</span>
+                <span className="text-white">11:30 - 14:30</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Samedi</span>
-                <span className="text-white">10:00 - 23:00</span>
+                <span>Dimanche</span>
+                <span className="text-white">Fermé</span>
               </li>
               <li className="flex justify-between">
-                <span>Dimanche</span>
-                <span className="text-white">10:00 - 21:00</span>
+                <span>Lundi</span>
+                <span className="text-white">Fermé</span>
               </li>
             </ul>
           </div>
@@ -67,22 +67,22 @@ const Footer = () => {
             <ul className="space-y-4 text-white/60">
               <li className="flex gap-3">
                 <MapPin size={20} className="text-primary shrink-0" />
-                <span>123 Avenue des Saveurs, 75001 Paris</span>
+                <span>31 Rue Jean Jacques Rousseau, 34000 Montpellier</span>
               </li>
               <li className="flex gap-3">
                 <Phone size={20} className="text-primary shrink-0" />
-                <span>+33 1 23 45 67 89</span>
+                <span>04 67 12 58 15</span>
               </li>
               <li className="flex gap-3">
                 <Mail size={20} className="text-primary shrink-0" />
-                <span>contact@brunchandco.fr</span>
+                <span>contact@bravobabette.fr</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-10 border-t border-white/10 text-center text-white/40 text-sm">
-          <p>© {new Date().getFullYear()} Brunch&Co. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Bravo Babette. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

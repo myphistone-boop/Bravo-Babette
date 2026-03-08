@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Utensils, Coffee, Pizza, Croissant } from 'lucide-react';
+import { Utensils, Sandwich, Beef, Salad } from 'lucide-react';
 
 const BackgroundElements = () => {
   return (
@@ -12,40 +12,40 @@ const BackgroundElements = () => {
 
       {/* Floating Food Icons */}
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, -20, 0],
           rotate: [0, 10, 0]
         }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-[15%] left-[5%] text-primary/20"
       >
-        <Coffee size={48} />
+        <Sandwich size={48} />
       </motion.div>
-      
+
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, 30, 0],
           rotate: [0, -15, 0]
         }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-[40%] right-[8%] text-primary/10"
       >
-        <Pizza size={64} />
+        <Beef size={64} />
       </motion.div>
 
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, -25, 0],
           rotate: [0, 20, 0]
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute bottom-[20%] left-[10%] text-primary/15"
       >
-        <Croissant size={56} />
+        <Salad size={56} />
       </motion.div>
 
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, 15, 0],
           rotate: [0, -10, 0]
         }}
@@ -61,7 +61,7 @@ const BackgroundElements = () => {
           <path d="M15 11h.01M11 15h.01M10 10h.01M14 14h.01M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
         </svg>
       </div>
-      
+
       <div className="absolute bottom-[30%] left-[25%] opacity-[0.03] -rotate-12">
         <svg width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
           <path d="M20 20L4 4m16 0L4 20M12 2v20M2 12h20"/>

@@ -25,7 +25,7 @@ const Navbar = () => {
               <div className="hidden md:block absolute -top-1 left-2 right-2 h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent" />
               {/* Main text */}
               <span className="text-[26px] md:text-[32px] font-serif italic font-bold tracking-tight leading-none">
-                Brunch<span className="text-primary">&</span>Co
+                Bravo<span className="text-primary"> </span>Babette
               </span>
               {/* Bottom decorative swirl */}
               <svg className="absolute -bottom-1.5 left-0 w-full h-2" viewBox="0 0 200 10" preserveAspectRatio="none">
@@ -59,7 +59,7 @@ const Navbar = () => {
               to="/contact"
               className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
             >
-              Réservation
+              Commander
             </Link>
           </div>
 
@@ -101,7 +101,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="w-full bg-primary text-white text-center py-3 rounded-lg font-medium shadow-lg shadow-primary/20"
                 >
-                  Réservation
+                  Commander
                 </Link>
               </div>
             </div>
