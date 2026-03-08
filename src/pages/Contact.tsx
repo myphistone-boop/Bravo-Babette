@@ -122,15 +122,15 @@ const Contact = () => {
                 {/* Desktop: always show */}
                 <ul className="hidden md:block space-y-4">
                   <li className="flex justify-between border-b border-white/10 pb-3">
-                    <span className="text-white/70 font-medium">Mardi - Samedi</span>
-                    <span className="text-white font-bold">11:30 - 14:30</span>
+                    <span className="text-white/70 font-medium">Mardi - Jeudi</span>
+                    <span className="text-white font-bold">12:00 - 14:30 / 19:30 - 22:00</span>
                   </li>
                   <li className="flex justify-between border-b border-white/10 pb-3">
-                    <span className="text-white/70 font-medium">Dimanche</span>
-                    <span className="text-white font-bold">Fermé</span>
+                    <span className="text-white/70 font-medium">Vendredi - Samedi</span>
+                    <span className="text-white font-bold">12:00 - 14:30 / 19:30 - 22:30</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-white/70 font-medium">Lundi</span>
+                    <span className="text-white/70 font-medium">Dimanche - Lundi</span>
                     <span className="text-white font-bold">Fermé</span>
                   </li>
                 </ul>
@@ -138,15 +138,15 @@ const Contact = () => {
                 {hoursOpen && (
                   <ul className="md:hidden space-y-3 mt-3">
                     <li className="flex justify-between border-b border-white/10 pb-2 text-sm">
-                      <span className="text-white/70">Mar - Sam</span>
-                      <span className="text-white font-bold">11:30 - 14:30</span>
+                      <span className="text-white/70">Mar - Jeu</span>
+                      <span className="text-white font-bold text-[11px]">12:00-14:30 / 19:30-22:00</span>
                     </li>
                     <li className="flex justify-between border-b border-white/10 pb-2 text-sm">
-                      <span className="text-white/70">Dimanche</span>
-                      <span className="text-white font-bold">Fermé</span>
+                      <span className="text-white/70">Ven - Sam</span>
+                      <span className="text-white font-bold text-[11px]">12:00-14:30 / 19:30-22:30</span>
                     </li>
                     <li className="flex justify-between text-sm">
-                      <span className="text-white/70">Lundi</span>
+                      <span className="text-white/70">Dim - Lun</span>
                       <span className="text-white font-bold">Fermé</span>
                     </li>
                   </ul>
@@ -214,12 +214,16 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, time: e.target.value})}
                     >
                       <option value="">Choisir...</option>
-                      <option>11:30</option>
                       <option>12:00</option>
                       <option>12:30</option>
                       <option>13:00</option>
                       <option>13:30</option>
                       <option>14:00</option>
+                      <option>19:30</option>
+                      <option>20:00</option>
+                      <option>20:30</option>
+                      <option>21:00</option>
+                      <option>21:30</option>
                     </select>
                   </div>
                   <div className="space-y-1 md:space-y-2">

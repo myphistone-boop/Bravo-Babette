@@ -47,15 +47,15 @@ const Footer = () => {
             <h4 className="text-lg font-serif italic mb-6 text-primary">Horaires</h4>
             <ul className="space-y-4 text-white/60 font-serif italic">
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Mardi - Samedi</span>
-                <span className="text-white">11:30 - 14:30</span>
+                <span>Mar - Jeu</span>
+                <span className="text-white">12:00-14:30 / 19:30-22:00</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Dimanche</span>
-                <span className="text-white">Fermé</span>
+                <span>Ven - Sam</span>
+                <span className="text-white">12:00-14:30 / 19:30-22:30</span>
               </li>
               <li className="flex justify-between">
-                <span>Lundi</span>
+                <span>Dim - Lun</span>
                 <span className="text-white">Fermé</span>
               </li>
             </ul>

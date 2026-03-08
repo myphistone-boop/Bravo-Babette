@@ -24,7 +24,7 @@ const About = () => {
           {/* Large portrait image */}
           <div className="rounded-2xl overflow-hidden shadow-xl mb-4 aspect-[3/4]">
             <img loading="lazy"
-              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
+              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
               alt="Bravo Babette"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -98,7 +98,7 @@ const About = () => {
             >
               <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl aspect-video">
                 <img loading="lazy"
-                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
                   alt="Bravo Babette"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
