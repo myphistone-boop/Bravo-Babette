@@ -28,7 +28,7 @@ const Home = () => {
               className="inline-flex items-center gap-3 mb-3 md:mb-6"
             >
               <div className="h-[1px] w-8 md:w-12 bg-primary" />
-              <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-primary">L'Excellence Culinaire</span>
+              <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-primary">Sandwicherie Créative</span>
               <div className="h-[1px] w-8 md:w-12 bg-primary" />
             </motion.div>
 
@@ -38,7 +38,7 @@ const Home = () => {
               transition={{ delay: 0.1 }}
               className="text-4xl md:text-8xl font-serif italic font-medium leading-[1.1] mb-4 md:mb-8 text-dark"
             >
-              Brunch<span className="text-primary">&Co</span>
+              Bravo<span className="text-primary"> </span>Babette
             </motion.h1>
 
             <motion.div
@@ -48,7 +48,7 @@ const Home = () => {
               className="flex flex-wrap justify-center gap-3 md:gap-6 mb-4 md:mb-8"
             >
               <Link to="/contact" className="bg-primary text-white px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm md:text-base shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all transform hover:scale-105">
-                Réserver une Table
+                Commander
               </Link>
               <Link to="/menu" className="bg-white border border-black/10 text-dark px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm md:text-base hover:bg-dark hover:text-white transition-all transform hover:scale-105">
                 Découvrir la Carte
@@ -59,8 +59,8 @@ const Home = () => {
           {/* Bento Grid - single image on mobile, full grid on desktop */}
           <div className="md:hidden rounded-2xl overflow-hidden shadow-xl h-48">
             <img loading="lazy"
-              src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=60"
-              alt="Restaurant Atmosphere"
+              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Lieu.webp"
+              alt="Bravo Babette"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -73,8 +73,8 @@ const Home = () => {
               className="md:col-span-2 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80"
-                alt="Restaurant Atmosphere"
+                src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Lieu.webp"
+                alt="Bravo Babette"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -87,8 +87,8 @@ const Home = () => {
                 className="rounded-[2rem] overflow-hidden shadow-xl"
               >
                 <img loading="lazy"
-                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=400&h=400"
-                  alt="Chef at work"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Exemple%203.webp"
+                  alt="Nos créations"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
@@ -100,8 +100,8 @@ const Home = () => {
                 className="rounded-[2rem] overflow-hidden shadow-xl"
               >
                 <img loading="lazy"
-                  src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=400&h=400"
-                  alt="Signature Dish"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Image%205.webp"
+                  alt="Sandwich signature"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
@@ -114,8 +114,8 @@ const Home = () => {
               className="md:col-span-1 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
-                src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=400&h=800"
-                alt="Brunch"
+                src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Exemple%202.webp"
+                alt="Saveurs du monde"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -136,18 +136,18 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl">
+              <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-square">
                 <img loading="lazy"
-                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
-                  alt="Chef at work"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
+                  alt="Bravo Babette restaurant"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-10 -right-10 bg-primary p-12 rounded-3xl shadow-2xl">
                 <div className="text-white text-center">
-                  <div className="text-5xl font-serif italic mb-2">25</div>
-                  <div className="text-xs font-bold uppercase tracking-widest opacity-80">Années d'Excellence</div>
+                  <div className="text-5xl font-serif italic mb-2">4,9</div>
+                  <div className="text-xs font-bold uppercase tracking-widest opacity-80">349 Avis Google</div>
                 </div>
               </div>
               <div className="absolute -top-10 -left-10 w-40 h-40 border-2 border-gold/20 rounded-full" />
@@ -159,14 +159,14 @@ const Home = () => {
                 <div className="h-[1px] w-12 bg-primary" />
               </div>
               <h2 className="text-5xl font-serif italic mb-8 leading-tight">
-                La Passion du Goût, <br />
-                Le Respect du <span className="text-primary">Produit</span>
+                Le Sandwich Élevé <br />
+                au Rang d'<span className="text-primary">Art</span>
               </h2>
               <p className="text-dark text-lg mb-8 leading-relaxed font-serif italic font-semibold">
-                Fondé en 1998, Brunch&Co est né d'une idée simple : redonner ses lettres de noblesse à la cuisine de terroir.
+                Bravo Babette est née d'une passion simple : créer des sandwichs d'exception avec des produits de qualité et des saveurs du monde entier.
               </p>
               <p className="text-dark text-lg mb-12 leading-relaxed font-semibold">
-                Chaque plat qui sort de notre cuisine est une célébration de l'artisanat culinaire. Nous croyons que la simplicité est la sophistication suprême, et c'est cette philosophie qui guide chacun de nos gestes.
+                Du pastrami fumé de Will's Smoked Meat au butternut rôti aux épices orientales, chaque création est pensée pour surprendre et régaler. Nos pains viennent de la Maison Bonnaire, nos sauces sont faites maison.
               </p>
 
               <div className="grid grid-cols-2 gap-8 mb-12">
@@ -175,8 +175,8 @@ const Home = () => {
                   <div className="text-sm font-bold uppercase tracking-widest text-dark/40">Fait Maison</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-serif italic text-primary mb-1">Bio</div>
-                  <div className="text-sm font-bold uppercase tracking-widest text-dark/40">Certifié Local</div>
+                  <div className="text-3xl font-serif italic text-primary mb-1">Frais</div>
+                  <div className="text-sm font-bold uppercase tracking-widest text-dark/40">Produits de Qualité</div>
                 </div>
               </div>
 
@@ -198,9 +198,9 @@ const Home = () => {
               <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-gold">Les Incontournables</span>
               <div className="h-[1px] w-8 md:w-12 bg-gold" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-serif italic mb-2 md:mb-4">Nos Plats <span className="text-primary">Signatures</span></h2>
+            <h2 className="text-3xl md:text-5xl font-serif italic mb-2 md:mb-4">Nos Sandwichs <span className="text-primary">Signatures</span></h2>
             <p className="text-dark/50 max-w-2xl mx-auto text-sm md:text-lg hidden md:block">
-              Une sélection exclusive de créations culinaires qui font la renommée de notre établissement.
+              Une sélection de créations originales qui font la renommée de Bravo Babette.
             </p>
           </div>
 
@@ -233,7 +233,7 @@ const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                     <div className="absolute bottom-2 left-2 right-2 text-white">
                       <h3 className="text-xs font-serif italic leading-tight mb-0.5 line-clamp-1">{product.name}</h3>
-                      <span className="text-primary font-bold text-xs">€{product.price}</span>
+                      <span className="text-primary font-bold text-xs">{product.price}€</span>
                     </div>
                   </div>
                 </Link>
@@ -264,7 +264,7 @@ const Home = () => {
                       <p className="text-sm font-bold uppercase tracking-widest mb-2 text-primary">{product.category}</p>
                       <h3 className="text-2xl font-serif italic mb-4">{product.name}</h3>
                       <div className="flex items-center justify-between">
-                        <span className="text-xl font-bold">€{product.price}</span>
+                        <span className="text-xl font-bold">{product.price}€</span>
                         <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                           <ArrowRight size={20} />
                         </div>
@@ -273,7 +273,7 @@ const Home = () => {
                   </div>
                   <div className="text-center group-hover:opacity-0 transition-opacity duration-500">
                     <h3 className="text-2xl font-serif italic mb-2">{product.name}</h3>
-                    <div className="text-primary font-bold">€{product.price}</div>
+                    <div className="text-primary font-bold">{product.price}€</div>
                   </div>
                 </Link>
               </motion.div>
@@ -301,15 +301,15 @@ const Home = () => {
               <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-gold">Avis Clients</span>
               <div className="h-[1px] w-8 md:w-12 bg-gold" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-serif italic mb-2 md:mb-4">Ce que l'on dit de <span className="text-primary">Brunch&Co</span></h2>
+            <h2 className="text-3xl md:text-5xl font-serif italic mb-2 md:mb-4">Ce que l'on dit de <span className="text-primary">Bravo Babette</span></h2>
           </div>
 
           {/* Horizontal scroll on mobile */}
           <div className="md:hidden flex gap-4 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
             {[
-              { text: "Une expérience inoubliable. Le ris de veau était tout simplement divin.", author: "Marie L.", role: "Critique Gastronomique" },
-              { text: "Le brunch du dimanche est devenu notre rendez-vous incontournable.", author: "Thomas D.", role: "Client Fidèle" },
-              { text: "On sent la passion du chef dans chaque bouchée.", author: "Julie R.", role: "Passionnée de Cuisine" }
+              { text: "Le BRAVO est incroyable, le pastrami fond en bouche. Meilleur sandwich de Montpellier !", author: "Marie L.", role: "Cliente Fidèle" },
+              { text: "Le FARCI avec l'agneau effiloché 8h, c'est une tuerie. On y revient chaque semaine.", author: "Thomas D.", role: "Habitué" },
+              { text: "Ambiance top, produits frais, sandwichs généreux. Le DOMI style japonais est une découverte.", author: "Julie R.", role: "Passionnée de Food" }
             ].map((t, i) => (
               <div key={i} className="snap-start shrink-0 w-[80vw] bg-white p-5 rounded-2xl shadow-lg border border-black/5">
                 <p className="text-dark text-sm mb-4 leading-relaxed font-serif italic font-semibold">"{t.text}"</p>
@@ -324,19 +324,19 @@ const Home = () => {
           <div className="hidden md:grid md:grid-cols-3 gap-12">
             {[
               {
-                text: "Une expérience inoubliable. Le ris de veau était tout simplement divin, et le service d'une élégance rare.",
+                text: "Le BRAVO est incroyable, le pastrami fond en bouche. Meilleur sandwich de Montpellier sans hésiter !",
                 author: "Marie L.",
-                role: "Critique Gastronomique"
+                role: "Cliente Fidèle"
               },
               {
-                text: "Le brunch du dimanche est devenu notre rendez-vous incontournable. Les oeufs bénédictine sont à tomber !",
+                text: "Le FARCI avec l'agneau effiloché 8h, c'est une tuerie. On y revient chaque semaine avec les collègues.",
                 author: "Thomas D.",
-                role: "Client Fidèle"
+                role: "Habitué"
               },
               {
-                text: "On sent la passion du chef dans chaque bouchée. Les produits sont d'une fraîcheur exceptionnelle.",
+                text: "Ambiance top, produits frais, sandwichs généreux. Le DOMI style japonais est une vraie découverte !",
                 author: "Julie R.",
-                role: "Passionnée de Cuisine"
+                role: "Passionnée de Food"
               }
             ].map((testimonial, i) => (
               <motion.div
@@ -367,18 +367,18 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-center">
             <div className="order-2 lg:order-1">
               <div className="inline-flex items-center gap-3 mb-2 md:mb-4">
-                <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-primary">Le Chef</span>
+                <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-primary">Notre Cuisine</span>
                 <div className="h-[1px] w-12 bg-primary" />
               </div>
               <h2 className="text-3xl md:text-5xl font-serif italic mb-3 md:mb-6 leading-tight">
-                L'Excellence au Bout des <span className="text-primary">Doigts</span>
+                Le Goût au Bout des <span className="text-primary">Doigts</span>
               </h2>
               <p className="text-dark text-base md:text-lg mb-4 md:mb-8 leading-relaxed font-serif italic font-semibold">
-                "La cuisine est un langage par lequel on peut exprimer l'harmonie, le bonheur, la beauté."
+                "Chaque sandwich est un voyage culinaire. Du Japon à New York, de la Tunisie à l'Italie, nous explorons les saveurs du monde."
               </p>
               <div className={`${chefOpen ? 'block' : 'hidden'} md:block`}>
                 <p className="text-dark text-base md:text-lg mb-4 md:mb-8 leading-relaxed font-semibold">
-                  L'équipe de chef Brunch&Co apporte des décennies d'expérience dans la haute gastronomie. Leur vision est simple : laisser le produit s'exprimer. En travaillant main dans la main avec nos producteurs, ils créent une carte qui évolue au rythme de la nature.
+                  L'équipe Bravo Babette sélectionne chaque ingrédient avec soin. Nos pains viennent de la Maison Bonnaire, notre pastrami de Will's Smoked Meat à Paris, et nos sauces sont toutes préparées maison. C'est cette exigence qui fait la différence.
                 </p>
               </div>
               <button
@@ -391,14 +391,14 @@ const Home = () => {
 
               <div className="flex items-center gap-4 md:gap-6">
                 <img loading="lazy"
-                  src="https://images.unsplash.com/photo-1583394293214-28dea15ee548?auto=format&fit=crop&w=100&q=80"
-                  alt="Signature"
-                  className="h-12 md:h-16 opacity-40 grayscale"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Enseigne.webp"
+                  alt="Bravo Babette"
+                  className="h-12 md:h-16 opacity-70 rounded-lg"
                   referrerPolicy="no-referrer"
                 />
                 <div>
-                  <div className="font-serif italic text-lg md:text-xl">L'Équipe Brunch&Co</div>
-                  <div className="text-xs font-bold uppercase tracking-widest text-primary">Chef de Cuisine</div>
+                  <div className="font-serif italic text-lg md:text-xl">L'Équipe Bravo Babette</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-primary">Sandwicherie Créative</div>
                 </div>
               </div>
             </div>
@@ -411,8 +411,8 @@ const Home = () => {
             >
               <div className="relative z-10 rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl aspect-video">
                 <img loading="lazy"
-                  src="https://storage.googleapis.com/novelec_assets/RESTAU%20BRUNCH/Restau%20CUISNE.jpg"
-                  alt="L'Équipe Brunch&Co"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
+                  alt="Cuisine Bravo Babette"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -430,15 +430,15 @@ const Home = () => {
           <div className="bg-dark rounded-2xl md:rounded-[4rem] p-6 md:p-12 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
             <div className="relative z-10">
-              <h2 className="text-2xl md:text-5xl font-serif italic mb-3 md:mb-6">Réservez votre Table</h2>
+              <h2 className="text-2xl md:text-5xl font-serif italic mb-3 md:mb-6">Passez votre Commande</h2>
               <p className="text-white/60 text-sm md:text-xl mb-4 md:mb-8 max-w-2xl mx-auto">
-                Vivez une expérience gastronomique unique.
+                Découvrez nos sandwichs créatifs et savoureux.
               </p>
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-3 bg-primary text-white px-8 py-3 md:px-12 md:py-5 rounded-full font-bold text-sm md:text-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-2xl shadow-primary/40"
               >
-                Réserver Maintenant
+                Commander Maintenant
                 <ArrowRight size={20} />
               </Link>
             </div>

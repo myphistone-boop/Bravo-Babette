@@ -18,14 +18,14 @@ const About = () => {
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold">Notre Histoire</span>
               <div className="h-[1px] w-8 bg-gold" />
             </div>
-            <h1 className="text-3xl font-serif italic">L'Héritage de la <span className="text-primary">Passion</span></h1>
+            <h1 className="text-3xl font-serif italic">L'Esprit <span className="text-primary">Babette</span></h1>
           </div>
 
           {/* Large portrait image */}
           <div className="rounded-2xl overflow-hidden shadow-xl mb-4 aspect-[3/4]">
             <img loading="lazy"
-              src="https://storage.googleapis.com/novelec_assets/RESTAU%20BRUNCH/Restau%20CUISNE.jpg"
-              alt="Brunch&Co Kitchen"
+              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
+              alt="Bravo Babette"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -33,15 +33,15 @@ const About = () => {
 
           {/* Text content */}
           <h2 className="text-xl font-serif italic mb-3 leading-tight">
-            L'Équipe de Chef <span className="text-primary">Brunch&Co</span>
+            <span className="text-primary">Bravo Babette</span>, la Sandwicherie Créative
           </h2>
           <p className="text-dark text-[15px] leading-relaxed font-serif italic font-semibold mb-3">
-            Formée dans les plus grandes cuisines étoilées de France, l'équipe a décidé de revenir à l'essentiel : une cuisine de terroir, sincère et généreuse.
+            Chez Bravo Babette, chaque sandwich est une création unique. Nous marions les saveurs du monde entier avec des produits frais et de qualité pour offrir une expérience gustative inoubliable.
           </p>
 
           {storyOpen && (
             <p className="text-dark text-[15px] leading-relaxed font-semibold mb-3">
-              Chez Brunch&Co, nous ne nous contentons pas de cuisiner ; nous célébrons chaque ingrédient. Notre équipe est composée de passionnés qui partagent une vision commune : offrir une expérience sensorielle complète, où chaque détail compte.
+              Du pastrami fumé new-yorkais à l'agneau effiloché du Moyen-Orient, en passant par le poulet pané japonais, chaque bouchée raconte une histoire. Nos pains sont sélectionnés avec soin chez Maison Bonnaire, nos sauces sont maison, et chaque garniture est pensée pour créer l'accord parfait.
             </p>
           )}
           <button
@@ -59,8 +59,8 @@ const About = () => {
                 <Award size={18} />
               </div>
               <div>
-                <div className="text-[9px] font-bold uppercase tracking-widest text-dark/40">Distinction</div>
-                <div className="font-bold text-xs">Maître Restaurateur</div>
+                <div className="text-[9px] font-bold uppercase tracking-widest text-dark/40">Avis Google</div>
+                <div className="font-bold text-xs">4,9/5 (349 avis)</div>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -68,8 +68,8 @@ const About = () => {
                 <Star size={18} />
               </div>
               <div>
-                <div className="text-[9px] font-bold uppercase tracking-widest text-dark/40">Avis</div>
-                <div className="font-bold text-xs">4.9/5 Étoiles</div>
+                <div className="text-[9px] font-bold uppercase tracking-widest text-dark/40">Spécialité</div>
+                <div className="font-bold text-xs">Sandwicherie</div>
               </div>
             </div>
           </div>
@@ -83,9 +83,9 @@ const About = () => {
               <span className="text-sm font-bold uppercase tracking-[0.3em] text-gold">Notre Histoire</span>
               <div className="h-[1px] w-12 bg-gold" />
             </div>
-            <h1 className="text-6xl font-serif italic mb-6">L'Héritage de la <span className="text-primary">Passion</span></h1>
+            <h1 className="text-6xl font-serif italic mb-6">L'Esprit <span className="text-primary">Babette</span></h1>
             <p className="text-dark max-w-2xl mx-auto text-lg font-serif italic font-semibold">
-              "Une aventure culinaire commencée il y a 25 ans, guidée par l'amour du goût et le respect de la nature."
+              "Des sandwichs d'auteur, généreux et créatifs, préparés avec passion au cœur de Montpellier."
             </p>
           </div>
 
@@ -98,8 +98,8 @@ const About = () => {
             >
               <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl aspect-video">
                 <img loading="lazy"
-                  src="https://storage.googleapis.com/novelec_assets/RESTAU%20BRUNCH/Restau%20CUISNE.jpg"
-                  alt="Brunch&Co Kitchen"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
+                  alt="Bravo Babette"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -114,13 +114,13 @@ const About = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-serif italic mb-8 leading-tight">
-                L'Équipe de Chef <span className="text-primary">Brunch&Co</span>
+                <span className="text-primary">Bravo Babette</span>, la Sandwicherie Créative
               </h2>
               <p className="text-dark text-lg mb-8 leading-relaxed font-serif italic font-semibold">
-                Formée dans les plus grandes cuisines étoilées de France, l'équipe de chef Brunch&Co a décidé de revenir à l'essentiel : une cuisine de terroir, sincère et généreuse.
+                Chez Bravo Babette, chaque sandwich est une création unique. Nous marions les saveurs du monde entier avec des produits frais et de qualité pour offrir une expérience gustative inoubliable.
               </p>
               <p className="text-dark text-lg mb-12 leading-relaxed font-semibold">
-                Chez Brunch&Co, nous ne nous contentons pas de cuisiner ; nous célébrons chaque ingrédient. Notre équipe est composée de passionnés qui partagent une vision commune : offrir une expérience sensorielle complète, où chaque détail compte.
+                Du pastrami fumé new-yorkais à l'agneau effiloché du Moyen-Orient, en passant par le poulet pané japonais, chaque bouchée raconte une histoire. Nos pains sont sélectionnés avec soin chez Maison Bonnaire, nos sauces sont maison, et chaque garniture est pensée pour créer l'accord parfait.
               </p>
 
               <div className="grid grid-cols-2 gap-8">
@@ -129,8 +129,8 @@ const About = () => {
                     <Award size={24} />
                   </div>
                   <div>
-                    <div className="text-xs font-bold uppercase tracking-widest text-dark/40">Distinction</div>
-                    <div className="font-bold">Maître Restaurateur</div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-dark/40">Avis Google</div>
+                    <div className="font-bold">4,9/5 (349 avis)</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -138,8 +138,8 @@ const About = () => {
                     <Star size={24} />
                   </div>
                   <div>
-                    <div className="text-xs font-bold uppercase tracking-widest text-dark/40">Avis</div>
-                    <div className="font-bold">4.9/5 Étoiles</div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-dark/40">Spécialité</div>
+                    <div className="font-bold">Sandwicherie</div>
                   </div>
                 </div>
               </div>

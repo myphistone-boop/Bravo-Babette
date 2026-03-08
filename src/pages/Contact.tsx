@@ -29,7 +29,7 @@ const Contact = () => {
           </div>
           <h1 className="text-3xl md:text-6xl font-serif italic mb-2 md:mb-6">Nous <span className="text-primary">Contacter</span></h1>
           <p className="text-dark/70 max-w-2xl mx-auto text-sm md:text-lg hidden md:block">
-            Une question, une suggestion ou une réservation spéciale ? Notre équipe est à votre écoute.
+            Une question, une commande ou une demande spéciale ? Notre équipe est à votre écoute.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
             {/* Mobile: compact row of phone + address */}
             <div className="grid grid-cols-2 gap-3 md:hidden">
               <motion.a
-                href="tel:+33123456789"
+                href="tel:0467125815"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 className="bg-white p-4 rounded-2xl flex flex-col items-center gap-2 border border-black/5 shadow-sm text-center"
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-dark">Appelez-nous</h3>
-                  <p className="text-dark/80 font-medium text-xs">+33 1 23 45 67 89</p>
+                  <p className="text-dark/80 font-medium text-xs">04 67 12 58 15</p>
                 </div>
               </motion.a>
 
@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-dark">Adresse</h3>
-                  <p className="text-dark/80 font-medium text-[11px]">123 Av. des Saveurs, Paris</p>
+                  <p className="text-dark/80 font-medium text-[11px]">31 Rue J.J. Rousseau, Montpellier</p>
                 </div>
               </motion.div>
             </div>
@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-dark mb-1">Appelez-nous</h3>
-                <p className="text-dark/80 font-medium text-base">+33 1 23 45 67 89</p>
+                <p className="text-dark/80 font-medium text-base">04 67 12 58 15</p>
               </div>
             </motion.div>
 
@@ -95,7 +95,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-dark mb-1">Notre Adresse</h3>
-                <p className="text-dark/80 font-medium text-base">123 Avenue des Saveurs, 75001 Paris</p>
+                <p className="text-dark/80 font-medium text-base">31 Rue Jean Jacques Rousseau, 34000 Montpellier</p>
               </div>
             </motion.div>
 
@@ -122,32 +122,32 @@ const Contact = () => {
                 {/* Desktop: always show */}
                 <ul className="hidden md:block space-y-4">
                   <li className="flex justify-between border-b border-white/10 pb-3">
-                    <span className="text-white/70 font-medium">Lundi - Vendredi</span>
-                    <span className="text-white font-bold">09:00 - 22:00</span>
+                    <span className="text-white/70 font-medium">Mardi - Jeudi</span>
+                    <span className="text-white font-bold">12:00 - 14:30 / 19:30 - 22:00</span>
                   </li>
                   <li className="flex justify-between border-b border-white/10 pb-3">
-                    <span className="text-white/70 font-medium">Samedi</span>
-                    <span className="text-white font-bold">10:00 - 23:00</span>
+                    <span className="text-white/70 font-medium">Vendredi - Samedi</span>
+                    <span className="text-white font-bold">12:00 - 14:30 / 19:30 - 22:30</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-white/70 font-medium">Dimanche</span>
-                    <span className="text-white font-bold">10:00 - 21:00</span>
+                    <span className="text-white/70 font-medium">Dimanche - Lundi</span>
+                    <span className="text-white font-bold">Fermé</span>
                   </li>
                 </ul>
                 {/* Mobile: collapsible */}
                 {hoursOpen && (
                   <ul className="md:hidden space-y-3 mt-3">
                     <li className="flex justify-between border-b border-white/10 pb-2 text-sm">
-                      <span className="text-white/70">Lun - Ven</span>
-                      <span className="text-white font-bold">09:00 - 22:00</span>
+                      <span className="text-white/70">Mar - Jeu</span>
+                      <span className="text-white font-bold text-[11px]">12:00-14:30 / 19:30-22:00</span>
                     </li>
                     <li className="flex justify-between border-b border-white/10 pb-2 text-sm">
-                      <span className="text-white/70">Samedi</span>
-                      <span className="text-white font-bold">10:00 - 23:00</span>
+                      <span className="text-white/70">Ven - Sam</span>
+                      <span className="text-white font-bold text-[11px]">12:00-14:30 / 19:30-22:30</span>
                     </li>
                     <li className="flex justify-between text-sm">
-                      <span className="text-white/70">Dimanche</span>
-                      <span className="text-white font-bold">10:00 - 21:00</span>
+                      <span className="text-white/70">Dim - Lun</span>
+                      <span className="text-white font-bold">Fermé</span>
                     </li>
                   </ul>
                 )}
@@ -165,7 +165,7 @@ const Contact = () => {
               <h2 className="text-lg md:text-2xl font-bold text-dark mb-4 md:mb-8 flex items-center gap-2 md:gap-3">
                 <Calendar size={22} className="text-primary md:hidden" />
                 <Calendar size={28} className="text-primary hidden md:block" />
-                Réserver une Table
+                Passer une Commande
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
@@ -217,11 +217,13 @@ const Contact = () => {
                       <option>12:00</option>
                       <option>12:30</option>
                       <option>13:00</option>
-                      <option>19:00</option>
+                      <option>13:30</option>
+                      <option>14:00</option>
                       <option>19:30</option>
                       <option>20:00</option>
                       <option>20:30</option>
                       <option>21:00</option>
+                      <option>21:30</option>
                     </select>
                   </div>
                   <div className="space-y-1 md:space-y-2">
@@ -245,7 +247,7 @@ const Contact = () => {
                   <label className="text-xs font-bold text-dark uppercase tracking-wider">Demandes Spéciales (Optionnel)</label>
                   <textarea
                     rows={3}
-                    placeholder="Allergies, anniversaire..."
+                    placeholder="Allergies, demandes particulières..."
                     className="w-full bg-cream border border-black/10 py-3 md:py-4 px-4 md:px-5 rounded-xl text-dark placeholder:text-dark/40 focus:ring-2 focus:ring-primary/30 focus:border-primary/30 transition-all resize-none outline-none text-sm md:text-base"
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                   ></textarea>
@@ -255,12 +257,12 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-primary text-white py-4 md:py-5 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-2 md:gap-3 hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 group"
                 >
-                  Confirmer la Réservation
+                  Envoyer la Commande
                   <Send size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </button>
 
                 <p className="text-center text-dark/40 text-xs md:text-sm">
-                  * Nous vous contacterons pour confirmer votre réservation.
+                  * Nous vous contacterons pour confirmer votre commande.
                 </p>
               </form>
             </motion.div>
