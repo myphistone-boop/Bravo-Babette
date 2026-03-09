@@ -35,7 +35,7 @@ const Home = () => {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              transition={{ delay: 0.05 }}
               className="text-4xl md:text-8xl font-serif italic font-medium leading-[1.1] mb-4 md:mb-8 text-dark"
             >
               Bravo<span className="text-primary"> </span>Babette
@@ -44,7 +44,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.1 }}
               className="flex flex-wrap justify-center gap-3 md:gap-6 mb-4 md:mb-8"
             >
               <Link to="/contact" className="bg-primary text-white px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm md:text-base shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all transform hover:scale-105">
@@ -69,7 +69,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.15 }}
               className="md:col-span-2 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
@@ -83,7 +83,7 @@ const Home = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
+                transition={{ delay: 0.2 }}
                 className="rounded-[2rem] overflow-hidden shadow-xl"
               >
                 <img loading="lazy"
@@ -96,7 +96,7 @@ const Home = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
+                transition={{ delay: 0.25 }}
                 className="rounded-[2rem] overflow-hidden shadow-xl"
               >
                 <img loading="lazy"
@@ -110,7 +110,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.3 }}
               className="md:col-span-1 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
