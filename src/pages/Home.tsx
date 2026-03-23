@@ -21,22 +21,43 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative pt-4 pb-4 md:pt-8 md:pb-8 lg:pt-12 lg:pb-12 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-4 md:mb-8">
+          {/* Mobile hero - pure CSS, no JS animations */}
+          <div className="md:hidden text-center mb-4">
+            <div className="inline-flex items-center gap-3 mb-3">
+              <div className="h-[1px] w-8 bg-primary" />
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Sandwicherie Créative</span>
+              <div className="h-[1px] w-8 bg-primary" />
+            </div>
+            <h1 className="text-4xl font-serif italic font-medium leading-[1.1] mb-4 text-dark">
+              Bravo<span className="text-primary"> </span>Babette
+            </h1>
+            <div className="flex flex-wrap justify-center gap-3 mb-4">
+              <Link to="/contact" className="bg-primary text-white px-6 py-3 rounded-full font-bold text-sm shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all">
+                Commander
+              </Link>
+              <Link to="/menu" className="bg-white border border-black/10 text-dark px-6 py-3 rounded-full font-bold text-sm hover:bg-dark hover:text-white transition-all">
+                Découvrir la Carte
+              </Link>
+            </div>
+          </div>
+
+          {/* Desktop hero - motion animations */}
+          <div className="hidden md:block text-center mb-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-3 mb-3 md:mb-6"
+              className="inline-flex items-center gap-3 mb-6"
             >
-              <div className="h-[1px] w-8 md:w-12 bg-primary" />
-              <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-primary">Sandwicherie Créative</span>
-              <div className="h-[1px] w-8 md:w-12 bg-primary" />
+              <div className="h-[1px] w-12 bg-primary" />
+              <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Sandwicherie Créative</span>
+              <div className="h-[1px] w-12 bg-primary" />
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-4xl md:text-8xl font-serif italic font-medium leading-[1.1] mb-4 md:mb-8 text-dark"
+              transition={{ delay: 0.05 }}
+              className="text-8xl font-serif italic font-medium leading-[1.1] mb-8 text-dark"
             >
               Bravo<span className="text-primary"> </span>Babette
             </motion.h1>
@@ -44,13 +65,13 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="flex flex-wrap justify-center gap-3 md:gap-6 mb-4 md:mb-8"
+              transition={{ delay: 0.1 }}
+              className="flex flex-wrap justify-center gap-6 mb-8"
             >
-              <Link to="/contact" className="bg-primary text-white px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm md:text-base shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all transform hover:scale-105">
+              <Link to="/contact" className="bg-primary text-white px-10 py-5 rounded-full font-bold text-base shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all transform hover:scale-105">
                 Commander
               </Link>
-              <Link to="/menu" className="bg-white border border-black/10 text-dark px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm md:text-base hover:bg-dark hover:text-white transition-all transform hover:scale-105">
+              <Link to="/menu" className="bg-white border border-black/10 text-dark px-10 py-5 rounded-full font-bold text-base hover:bg-dark hover:text-white transition-all transform hover:scale-105">
                 Découvrir la Carte
               </Link>
             </motion.div>
@@ -59,7 +80,7 @@ const Home = () => {
           {/* Bento Grid - single image on mobile, full grid on desktop */}
           <div className="md:hidden rounded-2xl overflow-hidden shadow-xl h-48">
             <img loading="lazy"
-              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Lieu.webp"
+              src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Image%20interieur.webp"
               alt="Bravo Babette"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -69,11 +90,11 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.15 }}
               className="md:col-span-2 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
-                src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Lieu.webp"
+                src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Image%20interieur.webp"
                 alt="Bravo Babette"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -83,7 +104,7 @@ const Home = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
+                transition={{ delay: 0.2 }}
                 className="rounded-[2rem] overflow-hidden shadow-xl"
               >
                 <img loading="lazy"
@@ -96,7 +117,7 @@ const Home = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
+                transition={{ delay: 0.25 }}
                 className="rounded-[2rem] overflow-hidden shadow-xl"
               >
                 <img loading="lazy"
@@ -110,7 +131,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.3 }}
               className="md:col-span-1 rounded-[2rem] overflow-hidden shadow-xl"
             >
               <img loading="lazy"
@@ -136,7 +157,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-square">
+              <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3]">
                 <img loading="lazy"
                   src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Accueil.webp"
                   alt="Bravo Babette restaurant"
@@ -403,13 +424,9 @@ const Home = () => {
               </div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="order-1 lg:order-2 relative"
-            >
-              <div className="relative z-10 rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl aspect-video">
+            {/* Mobile - no JS animation */}
+            <div className="md:hidden order-1 relative">
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-video">
                 <img loading="lazy"
                   src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
                   alt="Cuisine Bravo Babette"
@@ -417,8 +434,24 @@ const Home = () => {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute -top-10 -right-10 w-40 h-40 border-2 border-gold/20 rounded-full hidden md:block" />
-              <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/10 rounded-full blur-3xl hidden md:block" />
+            </div>
+            {/* Desktop - motion animation */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="hidden lg:block order-2 relative"
+            >
+              <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl aspect-video">
+                <img loading="lazy"
+                  src="https://storage.googleapis.com/novelec_assets/Bravo%20Babette/Cusine.webp"
+                  alt="Cuisine Bravo Babette"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="absolute -top-10 -right-10 w-40 h-40 border-2 border-gold/20 rounded-full" />
+              <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/10 rounded-full blur-3xl" />
             </motion.div>
           </div>
         </div>
